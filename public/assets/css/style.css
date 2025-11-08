@@ -285,6 +285,14 @@ h6 {
    padding-bottom: 20px;
 }
 
+.form_container {
+    margin-right: 40px;
+}
+
+.form_label {
+        color: #094834  !important;
+    }
+
 .amenities_styling {
     font-size: 20px !important;
      font-family: "Neue" !important;

@@ -125,7 +125,7 @@ export default function WhyInvest() {
   <button
             className="hover_external_btn"
             onClick={() => {
-              const element = document.getElementById("home");
+              const element = document.getElementById("contact-form");
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >

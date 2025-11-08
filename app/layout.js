@@ -8,7 +8,7 @@ import 'swiper/css/free-mode';
 import { dM_Sans, } from '@/lib/font'
 import { Toaster } from 'react-hot-toast';
 export const metadata = {
-    title: 'Sobha Siniya Island - Luxury Waterfront Living',
+    title: 'Sobha Siniya Island EN - Luxury Waterfront Living',
     description: 'Project by Sobha',
 }
 

@@ -1,0 +1,47 @@
+"use client";
+import Link from "next/link"
+import Image from "next/image";
+import { FaPlane, FaGlobe, FaMedkit, FaSchool, FaHouseUser, FaChartLine, FaCity, FaGolfBall, FaTree, FaStore, FaBiking, FaTruckMonster, FaHotel, FaMoneyBill, FaWalking, FaMap, FaShieldAlt, FaIdCard, FaLightbulb, FaGift, FaKey, FaUsers, FaBriefcase, FaPassport, FaStar } from "react-icons/fa6";
+import { Home, Building, Trees, Umbrella, UmbrellaIcon, TreePine, Activity, Dumbbell, Sailboat, MapPin, Leaf, TrendingUp } from "lucide-react";
+import ContactForm from "../ContactForm";
+export default function Form() {
+    return (
+        <>
+            <section className="custom_container properties_section" id="contact-form">
+              <div className="main-slider-one__content">
+        <div className='banner_text_container'>
+
+        <h1 className='heading_middle content_why_invest'>Let’s Find Your Dream Home</h1>
+        </div>
+      </div>
+      <div className='resp_usd'>
+        <p className="down_styling para_styling">
+ Invest in Sobha Siniya Island today with Shiro Estate. Gain access to exclusive projects, prime waterfront living, and high-return opportunities. Act now to reserve the best residences.
+</p>
+
+      </div>
+
+      <div className="row apartment_row_styling margin_left_null">
+        <div className="why_invest_wrapper col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div className="form_container">
+                <ContactForm/>
+              </div>
+            </div>
+            <div className="why_invest_wrapper col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+               <div className="apartment_container">
+  <Image
+    src="https://salescenter-siniyaisland.com/images/form-image.jpg"
+    alt="Apartment Image"
+    width={1200}
+    height={800}
+    className="apartment_image_styling"
+  />
+</div>
+            </div>
+      </div>
+
+     
+            </section>
+        </>
+    )
+}

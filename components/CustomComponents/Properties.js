@@ -88,7 +88,7 @@ export default function Properties() {
   <button
             className="hover_external_btn"
             onClick={() => {
-              const element = document.getElementById("home");
+              const element = document.getElementById("contact-form");
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
@@ -116,7 +116,7 @@ export default function Properties() {
                 <div className="badge">
                 Villas
                 </div>
-                <h3 className="project_title">Waterfront Apartments starting from AED 1.31</h3>
+                <h3 className="project_title">Waterfront Villas starting from AED 10.61</h3>
                 <div className="currency_container_villa">
                     <div className="property_price">
                         <span className="property_price_span">
@@ -144,7 +144,7 @@ export default function Properties() {
   <button
             className="hover_external_btn"
             onClick={() => {
-              const element = document.getElementById("home");
+              const element = document.getElementById("contact-form");
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >

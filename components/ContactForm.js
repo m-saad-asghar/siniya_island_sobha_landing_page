@@ -1,50 +1,178 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import PhoneInput, { isPossiblePhoneNumber } from "react-phone-input-2";
+import 'react-phone-input-2/lib/style.css';
+import { useRouter } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 export default function ContactForm() {
+   const router = useRouter();
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
+        name: '',
+        phone: '',
+        email: '',
+        message: '',
+    });
+    const [phoneError, setPhoneError] = useState('');
+    const [submitMessage, setSubmitMessage] = useState(null); // State for success/error message
+     const [isOpen, setOpen] = useState(false)
+    const [keepUpdated, setKeepUpdated] = useState(true);
+     const [disableBtn, setDisableBtn] = useState(false);
+     const searchParams = useSearchParams();
+     const [countryValue, setCountryValue] = useState('');
+  const [originValue, setOriginValue] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+   useEffect(() => {
+    const origin = searchParams.get('origin');
+    const country = searchParams.get('country');
+
+    if (origin) {
+      if (origin.toLowerCase() === 'meta') {
+        setOriginValue('Meta');
+      } else if (origin.toLowerCase() === 'google') {
+        setOriginValue('Google Ads');
+      } else {
+        setOriginValue('');
+      }
+    } else {
+      setOriginValue('');
+    }
+
+    if (country) {
+  const formattedCountry = country
+    .replace(/_/g, ' ')
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  setCountryValue(formattedCountry);
+} else {
+      setCountryValue('');
+    }
+  }, [searchParams]);
+
+   const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // Example: send data to Bitrix webhook
-    // const response = await fetch("YOUR_BITRIX_WEBHOOK_URL", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({
-    //     fields: {
-    //       TITLE: `New Lead from ${formData.name}`,
-    //       NAME: formData.name,
-    //       PHONE: [{ VALUE: formData.phone, VALUE_TYPE: "WORK" }],
-    //       EMAIL: [{ VALUE: formData.email, VALUE_TYPE: "WORK" }],
-    //       COMMENTS: formData.message,
-    //     },
-    //   }),
-    // });
-    // const result = await response.json();
-    // console.log(result);
+   if (!formData.phone) {
+    setPhoneError("Phone number is required");
+    return;
+} else if (formData.phone.length < 9 || formData.phone.length > 15) {
+  setPhoneError("Phone number must be between 9 and 15 characters");
+  return;
+}else{
+  setPhoneError("");
+}
 
-    // For now, just log data
-    console.log(formData);
+ let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
+ formData.phone = phone
 
-    // Reset form
-    setFormData({ name: "", phone: "", email: "", message: "" });
+  const payload_email = {
+    LANDING_PAGE: "Sobha Siniya Island EN",
+    ORIGIN: originValue,
+    COUNTRY: countryValue,
+    NAME: formData.name,
+    PHONE_TEXT: formData.phone,
+    EMAIL: formData.email,
+    MESSAGE: formData.message,
   };
+
+  const payload = {
+    fields: {
+      TITLE: `Sobha Siniya Island EN`,
+      UF_CRM_1760777561731: originValue,
+      NAME: formData.name,
+      PHONE_TEXT: formData.phone,
+      PHONE: [
+        {
+          VALUE: formData.phone,
+          VALUE_TYPE: "WORK",
+        },
+      ],
+      EMAIL: [
+        {
+          VALUE: formData.email,
+          VALUE_TYPE: "WORK",
+        },
+      ],
+      SOURCE_DESCRIPTION: formData.message,
+      SOURCE_ID: "WEB",
+      ASSIGNED_BY_ID: 25,
+      UF_CRM_1754652292782: "Sobha Siniya Island EN",
+      UF_CRM_1761206533: countryValue,
+    },
+    params: {
+      REGISTER_SONET_EVENT: "Y",
+    },
+  };
+
+  async function sendLeadEmail() {
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload_email),
+    });
+
+    const data = await res.json();
+    console.log("Email sent:", data);
+  } catch (err) {
+    console.error("Error sending email:", err);
+  }
+}
+
+  try {
+    setDisableBtn(true);
+    const response = await fetch(
+      "https://crm.shiroestate.ae/rest/25/btnspp9oeepo8jt6/crm.lead.add.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      }
+    );
+
+    const result = await response.json();
+   setDisableBtn(false);
+
+    if (result.result) {
+      router.push('/thank-you');
+      setFormData({
+          name: '',
+        phone: '',
+        email: '',
+        country_of_residence: '',
+        bedrooms: '',
+        duration: '',
+        purpose: '',
+      });
+      await sendLeadEmail();
+    } else {
+      setDisableBtn(false);
+      console.log("Something Went Wrong. Please Try Again.")
+    }
+  } catch (error) {
+    setDisableBtn(false);
+    console.error("Error submitting lead:", error);
+    console.log("Something Went Wrong. Please Try Again.")
+  }
+};
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
+         <label className="form_label">
+          Full Name*
+          </label>
         <input
           type="text"
           name="name"
@@ -52,25 +180,18 @@ export default function ContactForm() {
           className="form-control"
           value={formData.name}
           onChange={handleChange}
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
           style={{ borderRadius: "8px", border: "1px solid #ccc" }}
           required
         />
       </div>
 
       <div className="mb-3">
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Enter Your Phone Number"
-          className="form-control"
-          value={formData.phone}
-          onChange={handleChange}
-          style={{ borderRadius: "8px", border: "1px solid #ccc" }}
-          required
-        />
-      </div>
-
-      <div className="mb-3">
+        <label className="form_label">
+          Email*
+          </label>
         <input
           type="email"
           name="email"
@@ -78,12 +199,44 @@ export default function ContactForm() {
           className="form-control"
           value={formData.email}
           onChange={handleChange}
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
           style={{ borderRadius: "8px", border: "1px solid #ccc" }}
           required
         />
       </div>
 
       <div className="mb-3">
+        <label className="form_label">
+        Phone Number* (With Country Code)
+        </label>
+         <PhoneInput
+         name="phone"
+         country={"ae"}
+         value={formData.phone}
+        onChange={(value) =>
+        setFormData({
+        ...formData,
+        phone: value,
+      })
+    }
+    countryCodeEditable={false}
+     required
+   inputStyle={{
+   width: "100%",
+   borderRadius: "0",
+   border: phoneError ? "1px solid red" : "1px solid #000", // Visual error feedback
+   height: "60px",
+   }}
+   />
+  <p className='error_msg' style={{ color: 'red', fontSize: '14px', marginTop: '5px' }}>{phoneError}</p>
+      </div>
+
+      <div className="mb-3">
+        <label className="form_label">
+          Message
+          </label>
         <textarea
           name="message"
           rows="3"
@@ -91,6 +244,9 @@ export default function ContactForm() {
           className="form-control"
           value={formData.message}
           onChange={handleChange}
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
           style={{
             borderRadius: "8px",
             border: "1px solid #ccc",
@@ -102,6 +258,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
+        disabled={disableBtn}
         className="btn w-100"
         style={{
           backgroundColor: "#9f8151",
@@ -112,7 +269,7 @@ export default function ContactForm() {
           fontWeight: "600",
         }}
       >
-        Send Message
+        Submit
       </button>
     </form>
     </div>

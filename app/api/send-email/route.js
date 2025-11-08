@@ -4,10 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   try {
     const body = await request.json();
-    // Expected fields: LANDING_PAGE, ORIGIN, NAME, PHONE_TEXT, EMAIL
-    const { LANDING_PAGE, ORIGIN, COUNTRY, NAME, PHONE_TEXT, EMAIL } = body;
-
-    // Build email content (HTML and plain text)
+    const { LANDING_PAGE, ORIGIN, COUNTRY, NAME, PHONE_TEXT, EMAIL, MESSAGE } = body;
     const subject = `New Lead from ${LANDING_PAGE}`;
     const text = `
 New lead received:
@@ -15,6 +12,7 @@ Landing Page: ${LANDING_PAGE}
 Name: ${NAME || "-"}
 Phone: ${PHONE_TEXT || "-"}
 Email: ${EMAIL || "-"}
+Message: ${MESSAGE || "-"}
 Origin: ${ORIGIN || "-"}
 Country: ${COUNTRY || "-"}
     `.trim();
@@ -23,10 +21,10 @@ Country: ${COUNTRY || "-"}
       <h2>New Lead Received</h2>
       <table cellpadding="6" cellspacing="0" border="0">
         <tr><td><strong>Landing Page:</strong></td><td>${LANDING_PAGE || "-"}</td></tr>
-        <tr><td><strong>Origin:</strong></td><td>${ORIGIN || "-"}</td></tr>
         <tr><td><strong>Name:</strong></td><td>${NAME || "-"}</td></tr>
         <tr><td><strong>Phone:</strong></td><td>${PHONE_TEXT || "-"}</td></tr>
         <tr><td><strong>Email:</strong></td><td>${EMAIL || "-"}</td></tr>
+         <tr><td><strong>Message:</strong></td><td>${MESSAGE || "-"}</td></tr>
          <tr><td><strong>Origin:</strong></td><td>${ORIGIN || "-"}</td></tr>
           <tr><td><strong>Country:</strong></td><td>${COUNTRY || "-"}</td></tr>
       </table>

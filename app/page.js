@@ -20,6 +20,7 @@ import Map from "@/components/Map"
 import Future from "@/components/Future"
 import WhyInvest from "@/components/CustomComponents/WhyInvest"
 import Properties from "@/components/CustomComponents/Properties"
+import Form from "@/components/CustomComponents/Form"
 export default function Home() {
 
     return (
@@ -28,6 +29,7 @@ export default function Home() {
                 <Banner />
                 <WhyInvest/>
                 <Properties/>
+                <Form/>
                  {/* <About />
                  <TeamsListing/>
                  <Future/>
