@@ -31,7 +31,14 @@ export default function WhyInvest() {
                                               <div className="feauture-one__single-bottom">
                                                 <div className="icon-box">
                                                     <span className="icon-plane">
-                <Home className="text-gray-100" style={{ fontWeight: 100 }} size={30}/> 
+                                                        <Image
+                        src="/assets/icon/sobha_icons/sqft.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300} // adjust based on your logo’s aspect ratio
+                        style={{ height: "auto", width: "100%", maxWidth: 30 }}
+                      />
+                {/* <Home className="text-gray-100" style={{ fontWeight: 100 }} size={30}/>  */}
                                                     </span>
                                                     
                                                 </div>
@@ -55,7 +62,14 @@ export default function WhyInvest() {
                                               <div className="feauture-one__single-bottom">
                                                 <div className="icon-box">
                                                     <span className="icon-plane">
-                <Building className="icon-plane" size={30}/> 
+                                                        <Image
+                        src="/assets/icon/sobha_icons/upcomings.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300} // adjust based on your logo’s aspect ratio
+                        style={{ height: "auto", width: "100%", maxWidth: 30 }}
+                      />
+                {/* <Building className="icon-plane" size={30}/>  */}
                                                     </span>
                                                     
                                                 </div>
@@ -81,7 +95,15 @@ export default function WhyInvest() {
                                               <div className="feauture-one__single-bottom">
                                                 <div className="icon-box">
                                                     <span className="icon-plane">
-                <Trees className="icon-plane" size={30}/> 
+                                                          <Image
+                        src="/assets/icon/sobha_icons/open_green_spaces.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300}
+                        className="invert brightness-200"
+                        style={{ height: "auto", width: "100%", maxWidth: 30 }}
+                      />
+                {/* <Trees className="icon-plane" size={30}/>  */}
                                                     </span>
                                                     
                                                 </div>
@@ -135,7 +157,14 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-<Umbrella className="text-gray-100" style={{ fontWeight: 100 }} size={40}/> 
+                                          <Image
+                        src="/assets/icon/sobha_icons/exclusive_island_living.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300}
+                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                      />
+{/* <Umbrella className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
                                 </div>
                                 <div className="content-box">
@@ -152,7 +181,14 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-<TreePine className="text-gray-100" style={{ fontWeight: 100 }} size={40}/> 
+                                         <Image
+                        src="/assets/icon/sobha_icons/expensive_green_landscapes.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300}
+                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                      />
+{/* <TreePine className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
                                 </div>
                                 <div className="content-box">
@@ -170,8 +206,8 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-                                         <Image
-                        src="/assets/icon/sobha_amenities_1.svg"
+                                          <Image
+                        src="/assets/icon/sobha_icons/world_class_amenities.svg"
                         alt="world_class_amenities"
                         height={50}
                         width={300} // adjust based on your logo’s aspect ratio
@@ -199,7 +235,14 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-<MapPin className="text-gray-100" style={{ fontWeight: 100 }} size={40}/> 
+                                         <Image
+                        src="/assets/icon/sobha_icons/prime_location.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300}
+                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                      />
+{/* <MapPin className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
                                 </div>
                                 <div className="content-box">
@@ -217,7 +260,14 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-<Leaf className="text-gray-100" style={{ fontWeight: 100 }} size={40}/> 
+                                        <Image
+                        src="/assets/icon/sobha_icons/sustainable_development.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300} // adjust based on your logo’s aspect ratio
+                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                      />
+{/* <Leaf className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
                                 </div>
                                 <div className="content-box">
@@ -235,7 +285,14 @@ export default function WhyInvest() {
                                 
                                 <div className="icon-box">
                                     <span className="icon-plane" style={{color: "#9f8151 "}}>
-<TrendingUp className="text-gray-100" style={{ fontWeight: 100 }} size={40}/> 
+                                         <Image
+                        src="/assets/icon/sobha_icons/high_investment_potential.svg"
+                        alt="world_class_amenities"
+                        height={50}
+                        width={300}
+                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                      />
+{/* <TrendingUp className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
                                 </div>
                                 <div className="content-box">

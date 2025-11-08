@@ -39,7 +39,8 @@ export default function Banner() {
             <div className="container banner_container_main banner_wrapper">
                 <div className="main-slider-one__single slider_wrapper">
 
-                  <div>
+                 <div>
+                  <div style={{marginTop: 20}}>
                      <Link href="/" passHref className='logo_styling'>
   <Image
     src="https://salescenter-siniyaisland.com/images/logo.svg"
@@ -51,8 +52,7 @@ export default function Banner() {
   
 </Link>
                   </div>
-
-                  <div className='row slider_wrapper'>
+                   <div className='row slider_wrapper'>
 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
  <div className='row row_wrapper center'>
                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 main_container">
@@ -125,6 +125,7 @@ export default function Banner() {
                 </div>
 </div> */}
                   </div>
+                 </div>
 
                
 

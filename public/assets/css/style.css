@@ -318,6 +318,12 @@ h6 {
     justify-content: space-around;
 }
 
+.shiro_logo_container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
 .currency_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,6 +366,11 @@ h6 {
     line-height: 58px !important;
     font-weight: 300 !important;
     color: #ffffff;
+}
+
+.icon_price_styling {
+    display: flex;
+    align-items: center;
 }
 
 .custom_container {
@@ -2475,6 +2486,10 @@ Feauture One
 }
 
 .feauture-one__single:hover .feauture-one__single-text h2 a {
+    color: var(--thm-white);
+}
+
+.feauture-one__single:hover .feauture-one__single-text .white_icon {
     color: var(--thm-white);
 }
 

@@ -67,7 +67,7 @@
 
 .main-slider-one__single {
     position: relative;
-    display: block;
+    display: flex;
     padding: 20px 0px 24px;
     z-index: 1;
 }

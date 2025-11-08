@@ -7,9 +7,24 @@ export default function Footer1() {
     return (
         <>
             <footer className="footer-one custom_container" id="emaar-footer">
+
+                 <div className="logo-box centerize shiro_logo_container">
+  <Image
+    src="/assets/img/shiro_images/logo.png"
+    alt="shiro_logo"
+    height={30}
+    width={300}
+    style={{ height: "50px", width: "auto", cursor: "pointer" }}
+  />
+                                    </div>
                 <div className="footer-main">
                     <div>
-                        <p className="footer_content">
+                            <div className="number-box centerize footer_content">
+                                            <span style={{color: "#ffffff"}}>TL: 1447657</span>
+                                            <span style={{color: "#ffffff", marginLeft: 30, marginRight: 30}}>|</span>
+                                            <span style={{color: "#ffffff"}}>RERA: 47486</span>
+                                        </div>
+                        <p className="footer_content_middle">
                             &copy; {currentYear} Shiro Estate. All Rights reserved.
                         </p>
                         <p className="footer_content_middle">

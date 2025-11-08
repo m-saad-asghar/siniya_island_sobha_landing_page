@@ -26,6 +26,7 @@
     padding: 70px 0;
     overflow: hidden;
     z-index: 1;
+    padding-top: 20px;
 }
 
 .single-footer-widget {
