@@ -7508,6 +7508,10 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .villa_container { 
+        height: auto !important;
+    }
+
     .shiro_logo_container {
         margin-top: 45px;
     }
@@ -7540,6 +7544,7 @@ Project Four Css
 
     .apartment_container {
         width: 100%;
+        height: auto !important;
     }
 
     .properties_section {
