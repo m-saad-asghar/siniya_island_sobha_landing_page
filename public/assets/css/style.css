@@ -7508,6 +7508,20 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .hover_external_btn {
+        min-width: 100% !important;
+    }
+
+    .custom_container { 
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .right_image {
+        height: 100% !important;
+        width: 100% !important;
+    }
+
     .villa_container { 
         height: auto !important;
     }

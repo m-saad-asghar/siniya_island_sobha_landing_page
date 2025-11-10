@@ -142,6 +142,7 @@ export default function WhyInvest() {
                         height={300}
                         width={300} // adjust based on your logo’s aspect ratio
                         style={{ height: "auto", width: "auto" }}
+                        className="right_image"
                       />
                      </div>
                 </div>
