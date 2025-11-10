@@ -120,22 +120,46 @@ export default function Properties() {
                 <div className="currency_container_villa">
                     <div className="property_price">
                         <span className="property_price_span">
-                            INR 24.6 Cr*
+                            <Image
+                                                    src="/assets/icon/sobha_icons/inr.svg"
+                                                    alt="world_class_amenities"
+                                                    height={50}
+                                                    width={300} // adjust based on your logo’s aspect ratio
+                                                    style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
+                                                  /> INR 24.6 Cr*
                         </span>
                     </div>
                     <div className="property_price">
                          <span className="property_price_span">
-                            USD 2.91 M*
+                            <Image
+                                                    src="/assets/icon/sobha_icons/usd.svg"
+                                                    alt="world_class_amenities"
+                                                    height={50}
+                                                    width={300} // adjust based on your logo’s aspect ratio
+                                                    style={{ height: "auto", width: "100%", maxWidth: 30 }}
+                                                  /> USD 2.91 M*
                         </span>
                     </div>
                     <div className="property_price">
                          <span className="property_price_span">
-                            EUR 2.87 M*
+                            <Image
+                                                    src="/assets/icon/sobha_icons/eur.svg"
+                                                    alt="world_class_amenities"
+                                                    height={50}
+                                                    width={300} // adjust based on your logo’s aspect ratio
+                                                    style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
+                                                  /> EUR 2.87 M*
                         </span>
                     </div>
                     <div className="property_price">
                          <span className="property_price_span">
-                            GBP 2.36 M*
+                            <Image
+                                                    src="/assets/icon/sobha_icons/gbp.svg"
+                                                    alt="world_class_amenities"
+                                                    height={50}
+                                                    width={300} // adjust based on your logo’s aspect ratio
+                                                    style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
+                                                  /> GBP 2.36 M*
                         </span>
                     </div>
                 </div>
