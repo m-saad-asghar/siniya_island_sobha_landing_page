@@ -16,11 +16,11 @@ import TeamsListing from "@/components/teams/TeamsListing"
 import Link from "next/link"
 import Footer1 from "@/components/layout/footer/Footer1"
 import ContactForm from "@/components/ContactForm"
-import Map from "@/components/Map"
 import Future from "@/components/Future"
 import WhyInvest from "@/components/CustomComponents/WhyInvest"
 import Properties from "@/components/CustomComponents/Properties"
 import Form from "@/components/CustomComponents/Form"
+import Map from "@/components/CustomComponents/Map"
 export default function Home() {
 
     return (
@@ -29,6 +29,7 @@ export default function Home() {
                 <Banner />
                 <WhyInvest/>
                 <Properties/>
+                <Map/>
                 <Form/>
                  {/* <About />
                  <TeamsListing/>

@@ -74,6 +74,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'NeueLight';
+  src: url('/fonts/neue/NeueMontreal-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Lato';
   src: url('/fonts/lato/Lato-Regular.ttf') format('truetype');
   font-weight: 300;
@@ -173,6 +179,46 @@ button {
 button {
     outline: none;
     border: none;
+}
+
+.map_container_c {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.outer_container_map {
+display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.community_styling {
+    font-family: "NeueBold";
+    /* font-weight: 400; */
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    /* margin: 20px 0 20px 0; */
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.address_container {
+    display: flex;
+}
+.distance {
+    font-family: "NeueLight";
+    /* font-weight: 400; */
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    /* margin: 20px 0 20px 0; */
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.map_container {
+    margin-top: 65px;
+    margin-bottom: 50px;
 }
 
 .custom_spacing_btn {
@@ -280,6 +326,12 @@ h5 {
 
 h6 {
     font-size: 1rem;
+}
+
+.map_icon_styling {
+    height: auto;
+    width: 100%;
+    max-width: 40px;
 }
 
  .team_listing_styling {
@@ -431,6 +483,12 @@ height: 100%;
 }
 
 .banner_wrapper {
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 100vh;
+}
+
+.map_wrapper {
     padding-right: 100px;
     padding-left: 100px;
     height: 100vh;
@@ -5856,6 +5914,10 @@ Cart Page
     padding-right: 50px;
     padding-left: 50px;
 }
+ .map_wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+}
 .down_styling {
     max-width: 100%;
 }
@@ -7518,6 +7580,18 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+    .map_icon_styling {
+    max-width: 30px;
+}
+
+    .community_styling {
+        font-size: 1rem;
+    }
+
+    .distance {
+        font-size: 0.8rem;
+    }
 
     .hover_external_btn {
         min-width: 100% !important;
