@@ -22,7 +22,7 @@ export default function Form() {
       </div>
 
       <div className="row apartment_row_styling margin_left_null">
-        <div className="why_invest_wrapper col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div className="why_invest_wrapper mobile_form_container col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div className="form_container">
                 <ContactForm/>
               </div>

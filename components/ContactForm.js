@@ -259,7 +259,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={disableBtn}
-        className="btn w-100"
+        className="btn w-100 form_button"
         style={{
           backgroundColor: "#9f8151",
           color: "#fff",

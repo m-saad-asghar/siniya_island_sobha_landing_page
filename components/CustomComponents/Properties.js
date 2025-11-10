@@ -21,7 +21,7 @@ export default function Properties() {
       </div>
 
       <div className="row apartment_row_styling margin_left_null">
-            <div className="why_invest_wrapper col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div className="why_invest_wrapper why_invest_mobile_container col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                <div className="apartment_container">
   <Image
     src="https://salescenter-siniyaisland.com/images/yachtside/2.jpg?v=1"
@@ -84,7 +84,7 @@ export default function Properties() {
                     </div>
                 </div>
 
-                <div className="consultation_btn_style btn_cen">
+                <div className="consultation_btn_style btn_cen btn_mobile_resp">
   <button
             className="hover_external_btn"
             onClick={() => {
@@ -140,7 +140,7 @@ export default function Properties() {
                     </div>
                 </div>
 
-                <div className="consultation_btn_style btn_cen">
+                <div className="consultation_btn_style btn_cen btn_mobile_resp">
   <button
             className="hover_external_btn"
             onClick={() => {
