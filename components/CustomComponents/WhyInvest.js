@@ -163,7 +163,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300}
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <Umbrella className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
@@ -187,7 +187,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300}
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <TreePine className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
@@ -212,7 +212,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300} // adjust based on your logo’s aspect ratio
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <Sailboat className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
@@ -241,7 +241,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300}
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <MapPin className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
@@ -266,7 +266,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300} // adjust based on your logo’s aspect ratio
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <Leaf className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>
@@ -291,7 +291,7 @@ export default function WhyInvest() {
                         alt="world_class_amenities"
                         height={50}
                         width={300}
-                        style={{ height: "auto", width: "100%", maxWidth: 50 }}
+                        className="icons_styling"
                       />
 {/* <TrendingUp className="text-gray-100" style={{ fontWeight: 100 }} size={40}/>  */}
                                     </span>

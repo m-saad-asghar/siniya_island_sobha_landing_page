@@ -304,6 +304,12 @@ h1 {
     font-size: 2.5rem;
 }
 
+.icons_styling {
+    height: auto;
+    width: 100%;
+    max-width: 50px;
+}
+
 .line-break {
   display: inline; /* default inline */
 }
@@ -7580,6 +7586,14 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+    .amenities_styling {
+    font-size: 18px !important;
+}
+
+    .icons_styling {
+    max-width: 40px;
+}
 
     .map_container {
     margin-top: 45px;
