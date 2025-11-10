@@ -7581,6 +7581,11 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .map_container {
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
     .map_icon_styling {
     max-width: 30px;
 }
