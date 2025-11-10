@@ -65,12 +65,12 @@ export default function Banner() {
       <div className="main-slider-one__content">
         <div className='banner_text_container'>
 
-        <h1 className='heading_middle content'>LUXURY WATERFRONT LIVING IN VIBRANT ISLAND RESIDENCES BY SOBHA REALTY</h1>
+        <h1 className='heading_middle content'>FIND YOUR DREAM HOME TODAY</h1>
         </div>
       </div>
       <div className='resp_usd'>
         <p className="down_styling">
-  Own a luxurious waterfront home with open green spaces, unmatched views, and world-class amenities — crafted for modern elegance.
+  Invest in Sobha Siniya Island with Shiro Estate and unlock exclusive projects, prime waterfront living, and exceptional investment opportunities. Secure your preferred residence now.
 </p>
 
       </div>
