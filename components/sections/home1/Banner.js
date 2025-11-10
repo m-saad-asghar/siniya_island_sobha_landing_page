@@ -33,7 +33,7 @@ export default function Banner() {
       <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none" style={{height: "100vh"}}>                    
         <SwiperSlide className="swiper-slide">
           <div className="image-layer main_banner" 
-          style={{backgroundImage: 'url(assets/img/slider/siniya_island.jpg)'}}
+          style={{backgroundImage: 'url(assets/img/slider/s_island.webp)'}}
           >
             </div>
             <div className="container banner_container_main banner_wrapper">
@@ -65,12 +65,12 @@ export default function Banner() {
       <div className="main-slider-one__content">
         <div className='banner_text_container'>
 
-        <h1 className='heading_middle content'>FIND YOUR DREAM HOME TODAY</h1>
+        <h1 className='heading_middle content'>LUXURY WATERFRONT LIVING IN VIBRANT ISLAND RESIDENCES BY SOBHA REALTY</h1>
         </div>
       </div>
       <div className='resp_usd'>
         <p className="down_styling">
-  Invest in Sobha Siniya Island with Shiro Estate and unlock exclusive projects, prime waterfront living, and exceptional investment opportunities. Secure your preferred residence now.
+  Own a luxurious waterfront home with open green spaces, unmatched views, and world-class amenities — crafted for modern elegance.
 </p>
 
       </div>

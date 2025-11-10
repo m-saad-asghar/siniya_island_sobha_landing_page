@@ -11,12 +11,12 @@ export default function Form() {
               <div className="main-slider-one__content">
         <div className='banner_text_container'>
 
-        <h1 className='heading_middle content_why_invest'>Let’s Find Your Dream Home</h1>
+        <h1 className='heading_middle content_why_invest'>Find Your Dream Home Today</h1>
         </div>
       </div>
       <div className='resp_usd'>
         <p className="down_styling para_styling">
- Invest in Sobha Siniya Island today with Shiro Estate. Gain access to exclusive projects, prime waterfront living, and high-return opportunities. Act now to reserve the best residences.
+ Invest in Sobha Siniya Island with Shiro Estate and unlock exclusive projects, prime waterfront living, and exceptional investment opportunities. Secure your preferred residence now.
 </p>
 
       </div>
