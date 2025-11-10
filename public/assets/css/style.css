@@ -7592,7 +7592,7 @@ Project Four Css
 }
 
     .icons_styling {
-    max-width: 40px;
+    max-width: 80px;
 }
 
     .map_container {
@@ -7813,6 +7813,9 @@ padding: 50px 0px;
 
 	.service-one__single-inner {
 		padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
 	}
 
 	.service-one__single-inner .icon-box {
