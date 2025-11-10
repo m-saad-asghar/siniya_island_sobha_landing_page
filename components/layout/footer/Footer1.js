@@ -28,7 +28,7 @@ export default function Footer1() {
                             &copy; {currentYear} Shiro Estate. All Rights reserved.
                         </p>
                         <p className="footer_content_middle">
-                           Disclaimer: We are an officially authorized channel partner of the respective Dubai property developers featured on this website. All information provided, including project details, prices, and availability, is for general information purposes only and is subject to change without notice. The images and visual representations used on this landing page are for illustration purposes only and may not accurately reflect the actual properties. For the latest project details, please contact us directly or refer to the official developer sources.
+                           Disclaimer: We are an officially authorized channel partner for the Dubai property developers featured on this website. The information provided — including project details, pricing, and availability — is for general reference only and may change without prior notice. Images and visual materials shown on this page are for illustrative purposes and may not represent the actual properties. For the most accurate and up-to-date project information, please contact us directly or refer to the developers’ official sources.
                         </p>
                         <div className="footer_link_container">
                             <a className="footer_link" href="https://www.shiroestate.ae/privacy-policy" target="_blank">Privacy Policy</a>

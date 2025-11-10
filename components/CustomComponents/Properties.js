@@ -36,7 +36,7 @@ export default function Properties() {
                 <div className="badge">
                 Apartments
                 </div>
-                <h3 className="project_title">Waterfront Apartments starting from AED 1.31</h3>
+                <h3 className="project_title">Waterfront Apartments starting from AED 1.31M*</h3>
                 <div className="currency_container">
                     <div className="property_price">
                         <span className="property_price_span">
@@ -46,7 +46,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> INR 3.0 Cr*
+                                                  /> INR 3.16Cr*
                         </span>
                     </div>
                     <div className="property_price icon_price_styling">
@@ -57,7 +57,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 30 }}
-                                                  /> USD 359 K*
+                                                  /> USD 357K*
                         </span>
                     </div>
                     <div className="property_price icon_price_styling">
@@ -68,7 +68,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> EUR 355 K*
+                                                  /> EUR 309K*
                         </span>
                     </div>
                     <div className="property_price icon_price_styling">
@@ -79,7 +79,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> GBP 292 K*
+                                                  /> GBP 271K*
                         </span>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ export default function Properties() {
                 <div className="badge">
                 Villas
                 </div>
-                <h3 className="project_title">Waterfront Villas starting from AED 10.61</h3>
+                <h3 className="project_title">Waterfront Villas starting from AED 10.61M*</h3>
                 <div className="currency_container_villa">
                     <div className="property_price">
                         <span className="property_price_span">
@@ -126,7 +126,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> INR 24.6 Cr*
+                                                  /> INR 25.62Cr*
                         </span>
                     </div>
                     <div className="property_price">
@@ -137,7 +137,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 30 }}
-                                                  /> USD 2.91 M*
+                                                  /> USD 2.89M*
                         </span>
                     </div>
                     <div className="property_price">
@@ -148,7 +148,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> EUR 2.87 M*
+                                                  /> EUR 2.49M*
                         </span>
                     </div>
                     <div className="property_price">
@@ -159,7 +159,7 @@ export default function Properties() {
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> GBP 2.36 M*
+                                                  /> GBP 2.2M*
                         </span>
                     </div>
                 </div>
