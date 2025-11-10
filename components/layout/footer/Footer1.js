@@ -6,7 +6,7 @@ export default function Footer1() {
     const currentYear = new Date().getFullYear();
     return (
         <>
-            <footer className="footer-one custom_container" id="emaar-footer">
+            <footer className="footer-one custom_container" id="footer">
 
                  <div className="logo-box centerize shiro_logo_container">
   <Image

@@ -6,7 +6,7 @@ import { Home, Building, Trees, Umbrella, UmbrellaIcon, TreePine, Activity, Dumb
 export default function WhyInvest() {
     return (
         <>
-            <section className="custom_container" id="why-invest-in-sobha">
+            <section className="custom_container" id="why-choose-siniya">
                 <div className="row margin_left_null">
 <div className="why_invest_wrapper_pictures col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 <div className="main-slider-one__content">

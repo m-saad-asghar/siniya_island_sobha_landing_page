@@ -6,7 +6,7 @@ import { Home, Building, Trees, Umbrella, UmbrellaIcon, TreePine, Activity, Dumb
 export default function Properties() {
     return (
         <>
-            <section className="custom_container properties_section" id="why-invest-in-sobha">
+            <section className="custom_container properties_section" id="siniya-projects">
               <div className="main-slider-one__content">
         <div className='banner_text_container'>
 
@@ -38,15 +38,15 @@ export default function Properties() {
                 </div>
                 <h3 className="project_title">Waterfront Apartments starting from AED 1.33M*</h3>
                 <div className="currency_container">
-                    <div className="property_price">
-                        <span className="property_price_span">
-                          <Image
-                                                    src="/assets/icon/sobha_icons/inr.svg"
+                    <div className="property_price icon_price_styling">
+                         <span className="property_price_span">
+                            <Image
+                                                    src="/assets/icon/sobha_icons/gbp.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> INR 3.21Cr*
+                                                  /> GBP 275K*
                         </span>
                     </div>
                     <div className="property_price icon_price_styling">
@@ -71,15 +71,15 @@ export default function Properties() {
                                                   /> EUR 313K*
                         </span>
                     </div>
-                    <div className="property_price icon_price_styling">
-                         <span className="property_price_span">
-                            <Image
-                                                    src="/assets/icon/sobha_icons/gbp.svg"
+                   <div className="property_price">
+                        <span className="property_price_span">
+                          <Image
+                                                    src="/assets/icon/sobha_icons/inr.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> GBP 275K*
+                                                  /> INR 3.21Cr*
                         </span>
                     </div>
                 </div>
@@ -95,6 +95,13 @@ export default function Properties() {
             I AM INTERESTED
           </button>
 </div>
+
+<div className='resp_usd'>
+        <p className="down_styling_note" style={{color: "#9f8151 "}}>
+  *The Global Prices may vary as per the Exchange Rate.
+</p>
+
+      </div>
 
                  {/* <div className="row">
                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -118,15 +125,15 @@ export default function Properties() {
                 </div>
                 <h3 className="project_title">Waterfront Villas starting from AED 10.75M*</h3>
                 <div className="currency_container_villa">
-                    <div className="property_price">
-                        <span className="property_price_span">
+                     <div className="property_price">
+                         <span className="property_price_span">
                             <Image
-                                                    src="/assets/icon/sobha_icons/inr.svg"
+                                                    src="/assets/icon/sobha_icons/gbp.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> INR 25.97Cr*
+                                                  /> GBP 2.22M*
                         </span>
                     </div>
                     <div className="property_price">
@@ -152,14 +159,14 @@ export default function Properties() {
                         </span>
                     </div>
                     <div className="property_price">
-                         <span className="property_price_span">
+                        <span className="property_price_span">
                             <Image
-                                                    src="/assets/icon/sobha_icons/gbp.svg"
+                                                    src="/assets/icon/sobha_icons/inr.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
                                                     style={{ height: "auto", width: "100%", maxWidth: 22, marginRight: 5 }}
-                                                  /> GBP 2.22M*
+                                                  /> INR 25.97Cr*
                         </span>
                     </div>
                 </div>
@@ -175,6 +182,13 @@ export default function Properties() {
             I AM INTERESTED
           </button>
 </div>
+
+<div className='resp_usd'>
+        <p className="down_styling_note" style={{color: "#9f8151 "}}>
+  *The Global Prices may vary as per the Exchange Rate.
+</p>
+
+      </div>
             </div>
 
             <div className="why_invest_wrapper_villa col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">

@@ -1195,6 +1195,16 @@ input {
     /* max-width: 70%; */
 }
 
+.down_styling_note {
+    color: #9f8151 ;
+     font-size: 0.8rem;
+    font-family: "Neue";
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    /* max-width: 70%; */
+}
+
 .modern-checkbox:checked::after {
   content: '';
   position: absolute;
@@ -5925,6 +5935,9 @@ Cart Page
     padding-left: 30px;
 }
 .down_styling {
+    max-width: 100%;
+}
+.down_styling_note {
     max-width: 100%;
 }
 .hover_external_btn {

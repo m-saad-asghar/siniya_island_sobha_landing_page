@@ -31,7 +31,7 @@ export default function Map() {
   return (
     <>
     
-    <section className="main-slider main-slider-one" id="home">
+    <section className="main-slider main-slider-one" id="map">
         <div className='custom_container'>
             <div className="main-slider-one__content">
         <div className='banner_text_container'>
@@ -62,7 +62,7 @@ export default function Map() {
      <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -81,7 +81,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -100,7 +100,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -119,7 +119,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -138,7 +138,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -157,7 +157,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
@@ -176,7 +176,7 @@ export default function Map() {
  <div className='address_container'>
      <div>
         <Image
-                                src="/assets/icon/sobha_icons/prime_location_white.svg"
+                                src="/assets/icon/sobha_icons/location_icon_white.svg"
                                 alt="world_class_amenities"
                                 height={40}
                                 width={300}
