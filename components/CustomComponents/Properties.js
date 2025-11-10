@@ -52,7 +52,7 @@ export default function Properties() {
                     <div className="property_price icon_price_styling">
                          <span className="property_price_span">
                             <Image
-                                                    src="/assets/icon/sobha_icons/usd.svg"
+                                                    src="/assets/icon/sobha_icons/usd_curr.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
@@ -132,7 +132,7 @@ export default function Properties() {
                     <div className="property_price">
                          <span className="property_price_span">
                             <Image
-                                                    src="/assets/icon/sobha_icons/usd.svg"
+                                                    src="/assets/icon/sobha_icons/usd_curr.svg"
                                                     alt="world_class_amenities"
                                                     height={50}
                                                     width={300} // adjust based on your logo’s aspect ratio
