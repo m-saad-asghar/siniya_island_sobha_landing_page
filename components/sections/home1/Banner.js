@@ -33,7 +33,7 @@ export default function Banner() {
       <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none" style={{height: "100vh"}}>                    
         <SwiperSlide className="swiper-slide">
           <div className="image-layer main_banner" 
-          style={{backgroundImage: 'url(assets/img/slider/sobha_siniya_island.jpg)'}}
+          style={{backgroundImage: 'url(assets/img/slider/siniya_island.jpg)'}}
           >
             </div>
             <div className="container banner_container_main banner_wrapper">
