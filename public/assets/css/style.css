@@ -368,6 +368,10 @@ h6 {
      margin-bottom: 0 !important;
 }
 
+.shadow_line {
+    display: none;
+}
+
 .main_logo_styling {
     height: 100%;
     width: 100%;
@@ -731,6 +735,10 @@ font-size: 15px !important;
 
 .consultation_btn_style {
     margin-top: 40px;
+}
+
+.map_btn_style {
+    margin-top: 10px;
 }
 
 .about_para_span {
@@ -7600,6 +7608,15 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
+    .reverse_section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .portions_styling {
+    margin-bottom: 20px;
+}
+
     .amenities_styling {
     font-size: 18px !important;
 }
@@ -7666,7 +7683,11 @@ Project Four Css
     }
 
     .why_invest_wrapper_villa {
-        padding-bottom: 50px !important;
+        padding-bottom: 40px;
+    }
+
+    .why_invest_wrapper_villa_down {
+        padding-bottom: 0px !important;
     }
 
     .btn_mobile_resp {
@@ -7689,7 +7710,7 @@ padding: 50px 0px;
 
 .why_invest_wrapper {
     padding: 30px 0px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 .feature_row {
@@ -7712,6 +7733,11 @@ padding: 50px 0px;
     }
 
     .consultation_btn_style {
+    margin-top: 10px;
+}
+
+
+.map_btn_style {
     margin-top: 10px;
 }
 
@@ -9033,6 +9059,15 @@ padding: 50px 0px;
 }
 
 @media only screen and (max-width: 991px) {
+
+    .light_line {
+        display: none;
+    }
+
+    .shadow_line {
+    display: block;
+}
+
 
         #lp-pom-image-1223 .lp-pom-image-container img {
         width: calc(320px * var(--scale, 1));

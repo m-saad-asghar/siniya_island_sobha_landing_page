@@ -192,6 +192,22 @@ export default function Map() {
             </p>
             </div>
  </div>
+
+ <div className='address_container'>
+    <div style={{marginLeft: 10}}>
+               <div className="map_btn_style btn_cen">
+  <button
+            className="hover_external_btn"
+            onClick={() => {
+    window.open("https://maps.app.goo.gl/3QTzUycZQtZdcQC38", "_blank");
+  }}
+          >
+            EXPLORE MAP
+          </button>
+</div>
+            </div>
+ </div>
+
 </div>
                  </div>
 

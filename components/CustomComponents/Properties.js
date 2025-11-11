@@ -118,8 +118,8 @@ export default function Properties() {
             </div>
       </div>
 
-      <div className="row apartment_row_styling margin_left_null">
-             <div className="why_invest_wrapper_villa col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+      <div className="row apartment_row_styling margin_left_null reverse_section">
+             <div className="why_invest_wrapper_villa why_invest_wrapper_villa_down col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <div className="badge">
                 Villas
                 </div>
