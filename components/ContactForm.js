@@ -252,7 +252,6 @@ export default function ContactForm() {
             border: "1px solid #ccc",
             resize: "none",
           }}
-          required
         ></textarea>
       </div>
 
