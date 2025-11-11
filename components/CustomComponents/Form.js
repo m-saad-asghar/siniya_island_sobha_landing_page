@@ -27,7 +27,7 @@ export default function Form() {
                 <ContactForm/>
               </div>
             </div>
-            <div className="why_invest_wrapper col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div className="why_invest_wrapper_image col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                <div className="apartment_container">
   <Image
     src="https://salescenter-siniyaisland.com/images/form-image.jpg"
