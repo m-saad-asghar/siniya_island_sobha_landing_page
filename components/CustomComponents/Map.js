@@ -202,7 +202,7 @@ export default function Map() {
     window.open("https://maps.app.goo.gl/3QTzUycZQtZdcQC38", "_blank");
   }}
           >
-            EXPLORE MAP
+            VIEW MAP
           </button>
 </div>
             </div>
