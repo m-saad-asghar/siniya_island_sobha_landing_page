@@ -193,6 +193,10 @@ display: flex;
     gap: 25px;
 }
 
+.small_logo {
+    display: none;
+}
+
 .community_styling {
     font-family: "NeueBold";
     /* font-weight: 400; */
@@ -7735,8 +7739,8 @@ padding: 50px 0px;
     }
 
     .row_wrapper {
-        height: auto;
-        margin-top: 50px;
+        /* height: auto;
+        margin-top: 50px; */
     }
 
     .content_why_invest {
@@ -9070,6 +9074,14 @@ padding: 50px 0px;
 }
 
 @media only screen and (max-width: 991px) {
+
+    .small_logo {
+        display: block;
+    }
+
+    .logo_appear {
+        display: none;
+    }
 
     .light_line {
         display: none;
