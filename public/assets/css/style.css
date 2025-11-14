@@ -220,6 +220,10 @@ display: flex;
     color: #ffffff;
 }
 
+.captcha_container {
+    margin-top: 20px;
+}
+
 .map_container {
     margin-top: 65px;
     margin-bottom: 50px;
@@ -7617,6 +7621,10 @@ Project Four Css
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
+
+      .captcha_container {
+    margin-top: 30px;
+}
 
     .reverse_section {
         display: flex;
